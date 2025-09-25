@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VisionVoice</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Vision Voice</h1>
+    <p class="tagline">Describe an image using an AI model.</p>
+  </header>
+
+  <main>
+    <section class="controls">
+      <button id="openWebcamBtn" class="btn" aria-label="Open webcam to capture image">
+         Open Webcam
+      </button>
+
+      <div id="webcamContainer" class="webcam" style="display:none;">
+        <video id="webcamVideo" autoplay playsinline aria-label="Webcam video preview"></video>
+        <button id="captureBtn" class="btn" aria-label="Capture image from webcam">
+           Capture WebCam Image
+        </button>
+        <canvas id="snapshotCanvas" style="display:none;"></canvas>
+      </div>
+
+      <label for="uploadInput" class="btn" aria-label="Upload an image from your device">
+         Upload Image
+      </label>
+      <input type="file" id="uploadInput" accept="image/*" hidden>
+    </section>
+
+    <section class="output">
+      <h2>Description</h2>
+      <div id="aiResponse" class="response" role="status">
+        Upload or capture an image to begin.
+      </div>
+      <!-- Play/Stop button -->
+      <button id="speechBtn" class="btn" style="display:none;">⏹ Stop</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Vision Voice</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
