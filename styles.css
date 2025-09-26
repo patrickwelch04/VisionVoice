@@ -4,7 +4,20 @@
   margin: 0;
   padding: 0;
 }
+.logo {
+  max-width: 1000px;
+  height: auto;
+  margin-bottom: 0.5rem;
+  content: url('Vision Voice3.png');
+  
+}
 
+.high-contrast .logo {
+  max-width: 1000px;
+  height: auto;
+  margin-bottom: 0.5rem;
+  content: url('Vision VoiceY.png');
+}
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   background: #0f172a;
@@ -12,6 +25,56 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+.high-contrast {
+  background: #000000 !important;
+  color: #ffffff !important;
+}
+
+.high-contrast .response {
+  background: #111111 !important;
+  outline: 3px solid #ffff00 !important;
+  border: 2px solid #334155 !important; 
+}
+
+.high-contrast .btn {
+  background: #000000 !important;
+  outline: 3px solid #ffff00 !important; 
+  border: none !important;
+  color: #ffffff !important;
+}
+
+.high-contrast header {
+  background: #111111 !important;
+  border-bottom: 3px solid #ffff00 !important; 
+}
+
+.high-contrast footer {
+  background: #111111 !important;
+  border-top: 3px solid #ffff00 !important; 
+}
+.high-contrast .contrast-btn {
+  background: #111111 !important;
+  outline: 3px solid #ffff00 !important; 
+}
+
+.contrast-btn {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.contrast-btn:hover {
+  background: #2563eb;
 }
 
 /* main buttons and stuff */ 
@@ -24,8 +87,6 @@ body {
   width: 100%;
   max-width: 400px;        
 }
-
-
 
 header {
   text-align: center;
@@ -65,7 +126,6 @@ main {
   font-weight: bold;
   border-radius: 1.25rem;
   cursor: pointer;
-  transition: all 0.3s ease;
   display: inline-block;
   text-align: center;
   width: 100%;
@@ -76,13 +136,11 @@ main {
 .btn:hover,
 .btn:focus {
   background: linear-gradient(135deg, #2563eb, #3b82f6);
-  transform: translateY(-3px) scale(1.02);
   box-shadow: 0 12px 20px rgba(59, 130, 246, 0.4);
   outline: none;
 }
 
 .btn:active {
-  transform: scale(0.97);
   box-shadow: 0 6px 10px rgba(59, 130, 246, 0.3);
 }
 
@@ -137,5 +195,3 @@ footer {
   color: #94a3b8;
   box-shadow: 0 -4px 8px rgba(0,0,0,0.3);
 }
-
-
