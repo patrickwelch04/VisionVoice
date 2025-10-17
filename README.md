@@ -66,6 +66,8 @@ To safely close out of the website, click `CTRL+C` on both PowerShell instances 
 To run it again after installation, run PowerShell as Administrator, CD into the path where VisionVoice is located, then host the node.js server using `node server.js`. 
 Then open another PowerShell, CD into the directory, then run `npx serve .`. This will give you the IP needed to access the website. Ensure you run the node.js server first, then serve the directory. 
 
+If you shut it down without closing out of the servers, you'll need to close any process of it via the task manager then run it again. 
+
 ## Documentation for MacOS/Linux Systems
 No documentation for MacOS/Linx systems will be provided, although the steps above are pretty similar to what you need to do. 
 
