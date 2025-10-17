@@ -8,9 +8,13 @@
 </head>
 <body>
   <header>
-    <h1>Vision Voice</h1>
-    <p class="tagline">Describe an image using an AI model.</p>
-  </header>
+  <img class="logo" alt="Vision Voice Logo">
+  <p class="tagline">Describe an image using an AI model.</p>
+</header>
+
+  <button id="highContrastToggle" class="contrast-btn" aria-pressed="false">
+      High Contrast
+  </button>
 
   <main>
     <section class="controls">
@@ -34,11 +38,11 @@
 
     <section class="output">
       <h2>Description</h2>
-      <div id="aiResponse" class="response" role="status">
+      <div id="aiResponse" class="response" role="status" aria-live="polite">
         Upload or capture an image to begin.
       </div>
       <!-- Play/Stop button -->
-      <button id="speechBtn" class="btn" style="display:none;">⏹ Stop</button>
+      <button id="speechBtn" class="btn" style="display:none;" aria-label="Play or stop speech">⏹ Stop</button>
     </section>
   </main>
 
