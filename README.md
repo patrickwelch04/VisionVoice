@@ -22,10 +22,13 @@ In another PowerShell running in Administrator, CD into the directory as before,
 To safely close out of the website, click `CTRL+C` on both PowerShell instances and it'll shut down :)
 
 ## Running it after installation
-To run it again after installation, run PowerShell as Administrator, CD into the path where VisionVoice is located, then host the node.js server using `node server.js`. Then open another PowerShell, CD into the directory, then run `serve .`. This will give you the IP needed to access the website. Ensure you run the node.js server first, then serve the directory. 
+To run it again after installation, run PowerShell as Administrator, CD into the path where VisionVoice is located, then host the node.js server using `node server.js`. 
+Then open another PowerShell, CD into the directory, then run `serve .`. This will give you the IP needed to access the website. Ensure you run the node.js server first, then serve the directory. 
 
 ## Documentation for MacOS/Linux Systems
 No documentation for MacOS/Linx systems will be provided, although the steps above are pretty similar to what you need to do. 
+
+
 
 ## Using VisionVoice
 
