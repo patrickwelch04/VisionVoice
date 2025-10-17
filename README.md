@@ -1,4 +1,4 @@
-# (34) Vision Voice - Empowering the Visually Impaired using AI.
+# (34) Vision Voice - Empowering the Visually Impaired using AI
 
 Welcome to the **VisionVoice** documentation.
 
