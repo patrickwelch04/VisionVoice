@@ -5,6 +5,22 @@
   padding: 0;
 }
 
+.logo {
+  max-width: 600px;
+  height: auto;
+  margin-bottom: 0.5rem;
+  content: url('Vision Voice3.png');
+
+}
+
+.high-contrast .logo {
+  max-width: 600px;
+  height: auto;
+  margin-bottom: 0.5rem;
+  content: url('Vision VoiceY.png');
+}
+
+
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   background: #0f172a;
@@ -12,6 +28,57 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+
+.high-contrast {
+  background: #000000 !important;
+  color: #ffffff !important;
+}
+
+.high-contrast .response {
+  background: #111111 !important;
+  outline: 3px solid #ffff00 !important;
+  border: 2px solid #334155 !important; 
+}
+
+.high-contrast .btn {
+  background: #000000 !important;
+  outline: 3px solid #ffff00 !important; 
+  border: none !important;
+  color: #ffffff !important;
+}
+
+.high-contrast header {
+  background: #111111 !important;
+  border-bottom: 3px solid #ffff00 !important; 
+}
+
+.high-contrast footer {
+  background: #111111 !important;
+  border-top: 3px solid #ffff00 !important; 
+}
+.high-contrast .contrast-btn {
+  background: #111111 !important;
+  outline: 3px solid #ffff00 !important; 
+}
+
+.contrast-btn {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 1rem 1.5rem;
+  font-size: 1.25rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.contrast-btn:hover {
+  background: #2563eb;
 }
 
 /* main buttons and stuff */ 
@@ -59,17 +126,17 @@ main {
   background: linear-gradient(135deg, #3b82f6, #60a5fa);
   color: white;
   border: none;
-  padding: 1.5rem 2.5rem;
+  padding: 2rem 3rem; /* bigger hit area */
   margin: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.75rem; /* larger readable text */
   font-weight: bold;
-  border-radius: 1.25rem;
+  border-radius: 1.5rem;
   cursor: pointer;
   transition: all 0.3s ease;
   display: inline-block;
   text-align: center;
   width: 100%;
-  max-width: 320px;
+  max-width: 350px;
   box-shadow: 0 8px 15px rgba(59, 130, 246, 0.3);
 }
 

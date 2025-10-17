@@ -6,10 +6,23 @@ const snapshotCanvas = document.getElementById('snapshotCanvas');
 const uploadInput = document.getElementById('uploadInput');
 const aiResponse = document.getElementById('aiResponse');
 const speechBtn = document.getElementById('speechBtn');
+const highContrastToggle = document.getElementById('highContrastToggle');
 
 let isProcessing = false;
 let currentText = '';
 let isSpeaking = false;
+
+function toggleHighContrast() {
+  document.body.classList.toggle('high-contrast');
+  const isHighContrast = document.body.classList.contains('high-contrast');
+  highContrastToggle.setAttribute('aria-pressed', isHighContrast);
+  highContrastToggle.textContent = isHighContrast ? ' Normal ' : ' High Contrast';
+}
+
+
+highContrastToggle.addEventListener('click', toggleHighContrast);
+
+
 
 // Open webcam
 openWebcamBtn.addEventListener('click', async () => {
