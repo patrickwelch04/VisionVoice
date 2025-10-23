@@ -55,7 +55,7 @@ Then, run Windows Powershell as administrator and cd into the directory that the
 
 After you're in the directory, run `npm install express axios cors`. This installs the packages that the project needs for the backend. 
 
-If you get any errors, it's probably because of the security settings on your machine. You can run `Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned` in PowerShell to disable this, then run the axios cors command again in PowerShell.
+If you get any errors, it's probably because of the security settings on your machine. You can run `Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned` in PowerShell to disable this, then run the axios cors command again in PowerShell. If you cannot run this command, it's probably because of your institutions security settings on your machine. Unfortunately, I cannot give support for this, so you'll need to try it on a different machine. 
 
 After that, you can close out of all PowerShell/cmd prompt windows and open up 2 fresh instances of PowerShell in Administrator again. 
 
