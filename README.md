@@ -8,7 +8,7 @@ From there, you can decide whether or not to keep or change the prompt. I'd reco
 
 Then follow the instructions below :)
 
-Welcome to the **VisionVoice** documentation.
+# Welcome to the **VisionVoice** documentation.
 
 If you have any issues with installation, please contact the group via email at your latest convenience so we can get it sorted!
 
