@@ -1,5 +1,13 @@
 # (34) Vision Voice - Empowering the Visually Impaired using AI
 
+This project is now abandoned. Any code here is not being maintained. 
+
+**Wanna keep using it?**
+Use your own API key by generating one here: https://aistudio.google.com/api-keys. Click on 'Create API Key' for the model of your choosing, then replace line 8 in `server.js` with your API key.
+From there, you can decide whether or not to keep or change the prompt. I'd recommend changing it when a newer model comes out.
+
+Then follow the instructions below :)
+
 Welcome to the **VisionVoice** documentation.
 
 If you have any issues with installation, please contact the group via email at your latest convenience so we can get it sorted!
